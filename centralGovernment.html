@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+   
+    <title>Document</title>
+
+    <script src="../index.js"></script>
+    
+</head>
+<body>
+    <div>
+        <h1>Set Fund Transfering Details Of Central</h1>
+        
+        <p>State Name <input type="text" id="setStateName" placeholder="Enter State Name "></p>
+        <p>Cause <input type="text" id="setCause" placeholder="Enter Cause"></p>
+        <p>Bank Account Number Of Central <input type="number" id="setBankAccountNumberOfCentral " placeholder="Enter Bank Account Number Of Central"></p>
+        <p>Bank Account Number Of State <input type="number" id="setBankAccountNumberOfState " placeholder="Enter Bank Account Number Of State"></p>
+        <p>IFSC Number Of State Bank Account <input type="number" id="setIfscNumberOfStateBankAccount " placeholder="Enter IFSC Number Of State Bank Account"></p>
+        <p>Transfering Amount Of Central <input type="number" id="setTransferingAmountOfCentral " placeholder="Enter Transfering Amount Of Central"></p>
+        <p>Central's Bank Account Number Pin <input type="number" id="setCentralsAccountNumberPin " placeholder="Enter Central's Bank Account Number Pin"></p>
+
+        <button type="submit" onclick="App.setFundTransferingDetailsOfCentral()">Submit</button>
+
+    </div>
+
+
+    <div>
+        <h1>Get Transferred Fund Details Of Central </h1>
+        <p>State Name <input type="text" id="inputStateName" placeholder="Enter State Name"></p>
+        <p id="getStateName"></p>
+        <p id="getCause"></p>
+        <p id="getBankAccountNumberOfCentral"></p>
+        <p id="getBankAccountNumberOfState"></p>
+        <p id="getIfscNumberOfStateBankAccount"></p>
+        <p id="getTransferingAmountOfCentral"></p>
+        <p id="getBankAccountBalance"></p>
+
+        <button type="submit" onclick="App.getTransferredFundDetailsOfCentral()">Submit</button>
+
+    </div>
+    
+</body>
+</html>
+
+
+<!-- string memory _stateName, string memory _cause,
+                        uint _bankAccountNumberOfCentral, uint _bankAccountNumberOfstate,
+                        uint _ifscNumberOfStateBankAccount, uint _transferingAmountOfCentral,uint _centralsAccountNumberPin
+ -->

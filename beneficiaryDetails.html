@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    
+    <title>Document</title>
+
+    <script src="../index.js"></script>
+    <title>Government Relief Fund Tracking Using Blockchain</title>
+    
+</head>
+<body>
+     <div>
+        <h1>Set Beneficiary Details</h1>
+        
+        <p>Name <input type="text" id="setName" placeholder="Enter Your Name"></p>
+        <p>Aadhar Number <input type="number" id="setAadharNumber" placeholder="Enter Aadhar Number"></p>
+        <p>Phone Number <input type="number" id="setPhoneNumber" placeholder="Enter Phone Number"></p>
+        <p>Location <input type="text" id="setLocation" placeholder="Enter Location"></p>
+        <p>Pincode <input type="number" id="setPincode" placeholder="Enter Pincode"></p>
+        <p>Bank Account Number <input type="number" id="setBankAccountNumber" placeholder="Enter Bank Account Number"></p>
+
+        <button type="submit" onclick="App.setBeneficiaryDetails()">Submit</button>
+
+    </div>
+
+    <div>
+
+        <h1>Get Beneficiary Details</h1>
+        <p>Aadhar Number <input type="text" id="inputAadharNumber" placeholder = "Enter Aadhar Number"></p>
+        <p id="getName"></p>
+        <p id="getAadharNumber"></p>
+        <p id="getPhoneNumber"></p>
+        <p id="getLocation"></p>
+        <p id="getPincode"></p>
+        <p id="getBankAccountNumber"></p>
+        <p id="getBankAccountBalance"></p>
+
+        <button type="submit" onclick="App.getBeneficiaryDetails()">Submit</button>
+
+    </div>
+    
+    
+</body>
+</html>
+
+
+<!-- string memory _name,
+                                    uint _aadharNumber,
+                                    uint  _phoneNumber,
+                                    string memory _location,
+                                    uint _pincode,
+                                    uint _bankAccountNumber,
+                                    uint _ifscNumber -->
